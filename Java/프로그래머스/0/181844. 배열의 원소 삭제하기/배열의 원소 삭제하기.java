@@ -1,18 +1,12 @@
-import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.stream.Collectors;
+import java.util.List;
 class Solution {
     public int[] solution(int[] arr, int[] delete_list) {
-        ArrayList<Integer> resultList = new ArrayList<>();
-        
-        ArrayList<Integer> delList = new ArrayList<>();
-        for(int num : delete_list){
-            delList.add(num);
-        }
-        for(int i = 0; i < arr.length; i++){
-            if(!delList.contains(arr[i])){
-                resultList.add(arr[i]);
-            }
-        }
-        return resultList.stream().mapToInt(Integer::intValue).toArray();
-        
+        return Arrays.stream(arr)
+            .boxed()
+            .filter(num -> Arrays.stream(delete_list).noneMatch(del -> del == num))
+            .mapToInt(Integer::intValue)
+            .toArray();
     }
 }
