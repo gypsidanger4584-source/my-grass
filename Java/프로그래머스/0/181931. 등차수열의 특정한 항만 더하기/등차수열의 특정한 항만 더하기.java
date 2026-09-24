@@ -1,11 +1,9 @@
+import java.util.stream.IntStream;
 class Solution {
     public int solution(int a, int d, boolean[] included) {
-        int answer = 0;
-        for(int i = 0; i < included.length; i++){
-            if(included[i]){
-                answer += (a+(i*d));
-            }
-        }
-        return answer;
+        return IntStream.range(0,included.length)
+            .filter(i -> included[i])
+            .map(i -> a +(i  * d))
+            .sum();
     }
 }
