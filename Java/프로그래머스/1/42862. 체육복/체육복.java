@@ -4,10 +4,10 @@ class Solution {
         int answer = 0;
         int[] clothes = new int[n];
         Arrays.fill(clothes,1);
-        for(int student : reserve){
-            clothes[student -1]++;
-        }
         
+        for(int student : reserve){
+            clothes[student - 1]++;
+        }
         for(int student : lost){
             clothes[student -1]--;
         }
@@ -16,7 +16,7 @@ class Solution {
                 if(i > 0 && clothes[i-1] > 1){
                     clothes[i]++;
                     clothes[i-1]--;
-                }else if(i < n-1 && clothes[i+1] > 1){
+                }else if(i < n-1 && clothes[i+1]>1){
                     clothes[i]++;
                     clothes[i+1]--;
                 }
