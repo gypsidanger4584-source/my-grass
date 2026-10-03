@@ -2,7 +2,6 @@ class Solution {
     public int solution(String s) {
         int i = 0;
         int answer = 0;
-        
         while(i < s.length()){
             int same = 0;
             int diff = 0;
