@@ -4,7 +4,8 @@ class Solution {
         new_id = new_id.replaceAll("[^a-z0-9._-]","");
         new_id = new_id.replaceAll("\\.{2,}",".");
         new_id = new_id.replaceAll("^\\.|\\$","");
-        if(new_id.length() == 0){
+        
+        if(new_id.length()==0){
             new_id = "a";
         }
         if(new_id.length() >= 16){
