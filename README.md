@@ -9,6 +9,7 @@
 | Java | `Java/프로그래머스/0` (Lv.0) | 204 |
 | Java | `Java/프로그래머스/1` (Lv.1) | 79 |
 | Java | `Java/프로그래머스/2` (Lv.2) | 13 |
+| Java | `프로그래머스/2` (Lv.2, 폴더 위치가 다르게 저장된 풀이) | 3 |
 | Oracle SQL | `Oracle/프로그래머스/1` (Lv.1) | 8 |
 | Oracle SQL | `Oracle/프로그래머스/2` (Lv.2) | 1 |
 
