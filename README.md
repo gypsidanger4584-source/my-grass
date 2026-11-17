@@ -1,2 +1,28 @@
 # my-grass
-This is an auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+
+프로그래머스 알고리즘·SQL 풀이를 모아 둔 저장소입니다. [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub) 확장으로 제출하면 풀이가 이 저장소에 자동으로 커밋됩니다.
+
+## 풀이 현황
+
+| 구분 | 폴더 | 풀이 수 |
+|------|------|--------:|
+| Java | `Java/프로그래머스/0` (Lv.0) | 204 |
+| Java | `Java/프로그래머스/1` (Lv.1) | 79 |
+| Java | `Java/프로그래머스/2` (Lv.2) | 13 |
+| Oracle SQL | `Oracle/프로그래머스/1` (Lv.1) | 8 |
+| Oracle SQL | `Oracle/프로그래머스/2` (Lv.2) | 1 |
+
+위 수치는 저장소의 풀이 파일(`.java`, `.sql`) 개수를 센 값입니다.
+
+## 폴더 구조
+
+```
+<언어>/프로그래머스/<레벨>/<문제번호>. <문제명>/
+  ├─ <문제명>.java 또는 .sql   풀이 코드
+  └─ README.md                문제 정보 (BaekjoonHub가 자동 생성)
+```
+
+## 참고
+
+- 프로그래머스 문제 번호 기준으로 폴더가 만들어집니다.
+- `README.md`는 문제별로 자동 생성되므로 직접 수정하지 않습니다.
